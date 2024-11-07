@@ -1,0 +1,51 @@
+/* @theme base */
+@import 'gaia';
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&display=swap');
+
+* {
+  font-family: 'Noto Sans JP', sans-serif;
+}
+
+section {
+  padding: 16px 40px 16px 40px;
+  font-size: 30px;
+}
+
+h1 {
+  font-size: 36px;
+  color: #ffffff;
+  margin-bottom: 72px;
+}
+
+h2 {
+  font-size: 28px;
+}
+
+/* code block style */
+section pre {
+  border-radius: 8px;
+}
+
+/* inline code style */
+section code {
+  padding: 4px 8px 4px;
+  border-radius: 4px;
+  font-size: 0.8rem;
+}
+
+section ul,
+ol {
+  padding-left: 32px;
+  margin-top: 16px;
+  margin-bottom: 32px;
+}
+
+.two-columns {
+  display: flex;
+  justify-content: space-between;
+}
+
+.two-columns > div {
+  flex: 1;
+  padding: 10px;
+}

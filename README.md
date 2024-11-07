@@ -1,1 +1,1 @@
-# flutter_ninjas_2024
+# flutter-kaigi-2024

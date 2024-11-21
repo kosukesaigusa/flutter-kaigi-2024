@@ -19,125 +19,6 @@ Kosuke Saigusa（株式会社 Omiai）
 
 ---
 
-<!-- _class: lead -->
-
-<style scoped>h1 { margin-top: 80px; }</style>
-
-# いくつか質問させてください！
-
-![bg](https://cdn.kosukesaigusa.com/flutter-kaigi-2024/assets/center-title-background.svg)
-
----
-
-<!-- _class: lead -->
-
-<style scoped>h1 { margin-top: 80px; }</style>
-
-# Flutter での開発が好き！ 🙋
-
-![bg](https://cdn.kosukesaigusa.com/flutter-kaigi-2024/assets/background-black.svg)
-
----
-
-<!-- _class: lead -->
-
-<style scoped>h1 { margin-top: 80px; }</style>
-
-# Flutter で新規アプリの立ち上げをしたことがある 🙋
-
-![bg](https://cdn.kosukesaigusa.com/flutter-kaigi-2024/assets/background-black.svg)
-
----
-
-<!-- _class: lead -->
-
-<style scoped>h1 { margin-top: 80px; }</style>
-
-# Flutter で既存アプリをリプレイスしたことがある🙋
-
-![bg](https://cdn.kosukesaigusa.com/flutter-kaigi-2024/assets/background-black.svg)
-
----
-
-<!-- _class: lead -->
-
-<style scoped>h1 { margin-top: 80px; }</style>
-
-# 皆さんの Flutter プロジェクトについて
-
-![bg](https://cdn.kosukesaigusa.com/flutter-kaigi-2024/assets/center-title-background.svg)
-
----
-
-<!-- _class: lead -->
-
-<style scoped>h1 { margin-top: 80px; }</style>
-
-# 開発体験や開発生産性に概ね満足している🙋
-
-![bg](https://cdn.kosukesaigusa.com/flutter-kaigi-2024/assets/background-black.svg)
-
----
-
-<!-- _class: lead -->
-
-<style scoped>h1 { margin-top: 80px; }</style>
-
-# アーキテクチャは概ね開発しやすい🙋
-
-![bg](https://cdn.kosukesaigusa.com/flutter-kaigi-2024/assets/background-black.svg)
-
----
-
-<!-- _class: lead -->
-
-<style scoped>h1 { margin-top: 80px; }</style>
-
-# 負債が少なく開発しやすい🙋
-
-![bg](https://cdn.kosukesaigusa.com/flutter-kaigi-2024/assets/background-black.svg)
-
----
-
-<!-- _class: lead -->
-
-<style scoped>h1 { margin-top: 80px; }</style>
-
-# テストを十分に書けている🙋
-
-![bg](https://cdn.kosukesaigusa.com/flutter-kaigi-2024/assets/background-black.svg)
-
----
-
-<!-- _class: lead -->
-
-<style scoped>h1 { margin-top: 80px; }</style>
-
-# 新規参画メンバーが活躍しやすい🙋
-
-![bg](https://cdn.kosukesaigusa.com/flutter-kaigi-2024/assets/background-black.svg)
-
----
-
-<!-- _class: lead -->
-
-<style scoped>h1 { margin-top: 80px; }</style>
-
-# 本セッションのゴール
-
-![bg](https://cdn.kosukesaigusa.com/flutter-kaigi-2024/assets/center-title-background.svg)
-
----
-
-# 本セッションのゴール
-
-<div class="center-goal-container">
-  <h2>アーキテクチャを中心に<br>大規模アプリの Flutter へのリプレイスを<br>成功に導くアプローチを考える</h2>
-  <p class="note">※ プロジェクト構成、採用するパッケージ、技術スタックなども含めて、<br>広義に「アーキテクチャ」と表現しています</p>
-</div>
-
----
-
 # 自己紹介
 
 ![bg](https://cdn.kosukesaigusa.com/flutter-kaigi-2024/assets/self-introduction.svg)
@@ -177,6 +58,24 @@ Kosuke Saigusa（株式会社 Omiai）
 
 <style scoped>h1 { margin-top: 80px; }</style>
 
+# 本セッションのゴール
+
+![bg](https://cdn.kosukesaigusa.com/flutter-kaigi-2024/assets/center-title-background.svg)
+
+---
+
+# 本セッションのゴール
+
+<div class="center-goal-container">
+  <h2>マッチングアプリ『Omiai』を題材に<br>大規模アプリの Flutter へのリプレイスを<br>成功に導くアプローチを考える</h2>
+</div>
+
+---
+
+<!-- _class: lead -->
+
+<style scoped>h1 { margin-top: 80px; }</style>
+
 # なぜ『Omiai』は Flutter にリプレイスするのか？
 
 ![bg](https://cdn.kosukesaigusa.com/flutter-kaigi-2024/assets/center-title-background.svg)
@@ -191,7 +90,7 @@ Kosuke Saigusa（株式会社 Omiai）
 - iOS・Android (, Web) の各プラットフォームの古いコードベースが抱える多くの技術的負債や仕様差異
 - サーバサイドの負債の解消・仕様変更もクライアントアプリが理由で進めづらい
 
-## ✅ 目標
+## &#x2705; 目標
 
 - Flutter へのリプレイスによる単一コードベース化と技術的負債の返済
 - リプレイス中も機能追加は止めない
@@ -211,78 +110,212 @@ Kosuke Saigusa（株式会社 Omiai）
 
 # どのようにリプレイスするのか？
 
-## ✅ Flutter 経験の無いメンバーや新規参画メンバーが早期に活躍できる
-
-- Flutter 経験者ゼロ・業務委託中心組織から正社員採用によるチームの拡大へ
-
-## ✅ 負債化を繰り返さず、高い開発生産性を維持し続ける
+## &#x2705; 負債化を繰り返さず、高い開発生産性を維持し続ける
 
 - アーキテクチャ、CI、テスト、ドキュメンテーションなどで多くの工夫
 
-## ✅ リプレイス中も機能追加は止めない
+## &#x2705; Flutter 経験の無いメンバーや新規参画メンバーが早期に活躍できる
+
+- Flutter 経験者ゼロ・業務委託中心組織から正社員採用によるチームの拡大へ
+
+## &#x2705; リプレイス中も機能追加は止めない
 
 - Add-to-App を利用して既存アプリから Flutter をモジュールとして呼び出す
 - 主要なユーザー体験から順に、新しい機能を追加しながら Flutter にリプレイスする
 
 ---
 
-# 要件（一部抜粋）
+<!-- _class: lead -->
 
-## ✅ 開発スピード
+<style scoped>h1 { margin-top: 80px; }</style>
 
-- 〇〇 サイズの「典型的な実装タスク」は、N 日以内に実装を完了し、QA Ready の状態になる
-- 新規参画メンバーが N 日以内にアーキテクチャを理解でき、タスクに着手できる
-- 開発タスクの根拠をもった見積もりが可能になる
+# 陥りがちな現実
 
-## ✅ 品質
-
-- 規約に従った品質の高いコードをチーム全員で書くことができる
-- 業務ロジック層と、それより抽象的な層全てで、ユニットテストがカバレッジ 100% で記述できる
-- ソースコードが「実行可能な仕様書」として機能する
+![bg](https://cdn.kosukesaigusa.com/flutter-kaigi-2024/assets/background-black.svg)
 
 ---
 
-# 陥りがちな現実と理想
+# PR レビューで防ぐしかないコード規約違反
 
-<div class="two-columns">
+- UI 層から直接 Repository のメソッドを呼び出すのを禁止している場合
+- コード規約で縛り、PR レビューで防ぐしか方法がない
+- 見逃されたコードが生き残ってしまうと、新規参画メンバーの迷いに繋がる
 
-<div>
-
-## ⛔ 陥りがちな現実
-
-- 次第に負債が蓄積し、その悪影響が広く波及する
-- 既存実装の影響箇所を隈なく探さないと、タスクの実装ができない
-- 実装の正しさを判断する基準が曖昧で、迷う時間が長い
-- コードの品質維持が熟練メンバーの属人的なレビューに頼っている
-
-</div>
-
-<div>
-
-## ✅ 理想
-
-- アーキテクチャにより負債化を未然に防ぎ、品質が維持される
-- 影響範囲が明確で、本質的な実装に集中できる
-- 実装の正しさを判断する基準が明確で、迷わず開発できる
-- コードの品質維持が仕組みとして確立され、誰でも活躍できる
-
-</div>
-
-</div>
+```dart
+ElevatedButton(
+  onPressed: () async {
+    await someRepositoryMethod();
+  },
+  /** 省略 */
+);
+```
 
 ---
 
-# 目標を達成するためのアプローチ
+# UI とロジックの分離の失敗
 
-## ✅ アーキテクチャによる品質担保
+- 業務ロジックの実装に `BuildContext` が依存する
+- ロジックのユニットテストが Dart のユニットテストで書けない
 
-- 誤った実装を防ぐガードレールをアーキテクチャで実現する
-- 明確な境界と依存関係の制御により保守性を高める
-  1. マルチパッケージ構成による責務の分離
-  2. パッケージ間の依存関係の明確化と制御
-  3. Flutter の世界・Dart の世界の明確な区別
-  4. クライアントアプリとサーバサイドアプリの境界の明確な区別
-- 「正しい実装」が自然と導かれる構造を目指す
+```dart
+import 'package:flutter/material.dart';
+import 'package:flutter_localizations/flutter_localizations.dart';
+
+Future<void> someLogic(BuildContext context) async {
+  await doSomething();
+  ScaffoldMessenger.of(context).showSnackBar(
+    SnackBar(content: Text(AppLocalizations.of(context).success)),
+  );
+}
+```
+
+---
+
+# 不自然な依存
+
+- UI 層で HTTP 通信が起因の例外を流れてくる・捕捉する
+- UI 層が特定の HTTP クライアントパッケージに依存するのは不自然（知るべきでない）
+
+```dart
+import 'package:dio/dio.dart';
+
+ElevatedButton(
+  onPressed: () async {
+    try {
+      await doSomething();
+    } on DioException catch (e) {
+      /** 省略 */
+    },
+  },
+  /** 省略 */
+),
+```
+
+---
+
+# 曖昧な例外ハンドリングの方針
+
+- どこでどんな例外ハンドリングをするべきかの方針が明確でない
+- 捕捉した例外をどのようにユーザー体験に反映するかの方針が明確でない
+- 図らずエラーコードなどの情報をユーザーに見せてしまう
+
+```dart
+ElevatedButton(
+  onPressed: () async {
+    try {
+      await doSomething();
+    } on APIException catch (e) {
+      await showDialog<void>(
+        context: context,
+        builder: (context) => AlertDialog(content: Text('${e.statusCode}')),
+      );
+    },
+  },
+  /** 省略 */
+),
+```
+
+---
+
+# 依存を誤って負債化
+
+- 通信層が、業務知識としての認証情報に依存する
+- 通信層のユニットテストを書くのに、業務知識をモックする必要がある
+- もしこの依存が許されるなら、あらゆる業務知識に同様に依存し始める危険がある
+
+```dart
+class SomeRepository {
+  /** 省略 */
+
+  Future<Something> fetchSomething({/** 省略 */}) async {
+    final accessToken = _ref.read(accessTokenProvider);
+    final response = await _client.request(/** 省略 */);
+    /** 省略 */
+  }
+}
+```
+
+---
+
+# 依存を誤って負債化
+
+- 当初の汎用的な基盤実装が、いつの間にか意図しない対象に依存するようになる
+- 汎用性は失われ、責務が曖昧な負債コードに
+
+```dart
+class PaginatedFetcher<T> {
+  /** 省略 */
+
+  Future<List<T>> fetchNextPage(int page, int perPage) async {
+    /** 省略 */
+    final items = await fetch(/** 省略 */);
+    /** 省略 */
+    await ref.read(someUseCaseProvider).doSomething();
+    return items;
+  }
+}
+```
+
+---
+
+# クライアント・サーバサイドアプリの密結合
+
+- ユーザーに知らせるエラーメッセージに、サーバサイドからのレスポンスデータがそのまま利用される
+- クライアントアプリとサーバサイドアプリの境界が曖昧
+
+```dart
+ElevatedButton(
+  onPressed: () async {
+    try {
+      await doSomething();
+    } on APIException catch (e) {
+      await showDialog<void>(
+        context: context,
+        builder: (context) => AlertDialog(content: Text(e.message)),
+      );
+    },
+  },
+  /** 省略 */
+),
+```
+
+---
+
+<!-- _class: lead -->
+
+<style scoped>h1 { margin-top: 80px; }</style>
+
+# どのように防ぐ？
+
+![bg](https://cdn.kosukesaigusa.com/flutter-kaigi-2024/assets/background-black.svg)
+
+---
+
+<!-- _class: lead -->
+
+<style scoped>h1 { margin-top: 80px; }</style>
+
+# 可能な限り仕組みで防ぐ！
+
+![bg](https://cdn.kosukesaigusa.com/flutter-kaigi-2024/assets/background-black.svg)
+
+---
+
+# 方針
+
+## &#x2705; マルチパッケージ構成
+
+- レイヤーごとにパッケージを分ける
+- 各パッケージの責務と許可される依存を厳密にする
+- Flutter の世界と Dart の世界、クライアントアプリとサーバサイドアプリの境界を明確にする
+
+## &#x2705; ユニットテストを十分に継続的に書く
+
+- 業務ロジック層およびそれより抽象的な層で、ユニットテストがカバレッジ 100% で記述できる
+
+## &#x2705; 実装を可能な限りパターン化する
+
+- 典型的な実装をパターン化し、新規参画メンバーの早期の活躍を実現する
 
 ---
 
@@ -296,9 +329,13 @@ Kosuke Saigusa（株式会社 Omiai）
 
 ---
 
-# パッケージ一覧
+# パッケージ一覧（抜粋）
 
-各パッケージに許される直接的な依存は矢印の先のパッケージのみに限定される。
+- レイヤーごとにパッケージを分ける
+- 各パッケージに許される直接的な依存は矢印の先のパッケージのみに限定される
+- 他にも Unimplemented なインターフェースのみを定義し、各パッケージに利用させるパッケージなどもある
+
+<p class="note">※ ことば遣いは Flutter 公式の"Architecting Flutter apps" や Android Developers の "Guide to app architecture" に類似</p>
 
 ![bg](https://cdn.kosukesaigusa.com/flutter-kaigi-2024/assets/package-all.svg)
 
@@ -306,7 +343,11 @@ Kosuke Saigusa（株式会社 Omiai）
 
 # パッケージ一覧 (app)
 
-Flutter アプリのエントリポイントとしての実装、また、プレゼンテーション層としてのユーザー体験を実装する。
+- Flutter アプリのエントリポイントとしての実装
+  - `dart-define` などを通じたアプリの設定値の取得・決定
+  - `ProviderScope.overrides` による依存の注入
+- UI 層としてのユーザー体験を実装
+  - ウィジェットツリーの構築、画面遷移、各画面やコンポーネントの描画とインタラクション
 
 ![bg](https://cdn.kosukesaigusa.com/flutter-kaigi-2024/assets/package-app.svg)
 
@@ -314,7 +355,8 @@ Flutter アプリのエントリポイントとしての実装、また、プレ
 
 # パッケージ一覧 (base_ui)
 
-共通利用される テキストスタイル、色、画像などの基礎的・原始的な UI 部品、それらを組み合わせた共通の UI 部品などを実装する。
+- Flutter アプリ内で共通利用される テキストスタイル、色などのスタイルガイドの実装
+- 画像、ボタン、AppBar、TextField などの基礎的な UI 部品の実装
 
 ![bg](https://cdn.kosukesaigusa.com/flutter-kaigi-2024/assets/package-base-ui.svg)
 
@@ -322,7 +364,9 @@ Flutter アプリのエントリポイントとしての実装、また、プレ
 
 # パッケージ一覧 (domain)
 
-業務知識や業務ロジックを記述する。
+- クライアントアプリの業務概念を表すエンティティの定義
+- app がユーザー体験として利用する例外型の定義
+- Repository を通じてのデータの取得や保存などを含む業務ロジックの記述
 
 ![bg](https://cdn.kosukesaigusa.com/flutter-kaigi-2024/assets/package-domain.svg)
 
@@ -330,7 +374,8 @@ Flutter アプリのエントリポイントとしての実装、また、プレ
 
 # パッケージ一覧 (repository)
 
-データソース（自社の API サーバーやローカルストレージなど）とのやり取りを記述する。
+- データソースとのやり取りの記述
+- 接続先のデータソース（自社のバックエンドサーバやローカルストレージなど）の情報は表出させない
 
 ![bg](https://cdn.kosukesaigusa.com/flutter-kaigi-2024/assets/package-repository.svg)
 
@@ -338,17 +383,42 @@ Flutter アプリのエントリポイントとしての実装、また、プレ
 
 # パッケージ一覧 (system)
 
-3rd パーティのツールをラップして基礎的な実装を記述する（例：HTTP クライアント、Shared Preferences, Firebase Analytics など）。
+- 3rd パーティのツールをラップして基礎的な実装を記述
+  - 例：HTTP クライアント、Shared Preferences, Firebase Analytics など
+- 3rd パーティのツールとの依存は例外も含めて閉じ込めて外部に表出させない
+- 不要な機能のインターフェースは塞いでシンプルにする
 
 ![bg](https://cdn.kosukesaigusa.com/flutter-kaigi-2024/assets/package-system.svg)
 
 ---
 
-# パッケージ一覧 (dependency_provider)
+# パッケージ一覧（Flutter の世界）
 
-Unimplemented なインターフェースのみを定義する。アプリ実行時、各パッケージのユニットテスト時に振る舞いを上書きする。
+- app, base_ui パッケージは Flutter に直接依存する
+- Flutter エンジニアとしてコードを書く
 
-![bg](https://cdn.kosukesaigusa.com/flutter-kaigi-2024/assets/package-dependency-provider.svg)
+![bg](https://cdn.kosukesaigusa.com/flutter-kaigi-2024/assets/package-app-base-ui.svg)
+
+---
+
+# パッケージ一覧（Dart の世界）
+
+- domain, repository, system パッケージは Flutter には直接依存しない
+  - SharedPreferences などは内部で Flutter には依存しているので、transitive には依存する
+- Dart エンジニアとしてコードを書く
+  - Dart 言語と riverpod や freezed にさえ慣れれば Flutter 経験が浅くても書ける
+
+![bg](https://cdn.kosukesaigusa.com/flutter-kaigi-2024/assets/package-domain-repository-system.svg)
+
+---
+
+# パッケージ一覧（サーバサイドとの境界）
+
+- repository パッケージがサーバサイドとの境界として働く
+- サーバサイドの負債は repository パッケージで吸収し切る
+- app, domain はサーバサイドの存在や業務知識を意識せずに実装する
+
+![bg](https://cdn.kosukesaigusa.com/flutter-kaigi-2024/assets/package-repository.svg)
 
 ---
 
@@ -364,25 +434,36 @@ Unimplemented なインターフェースのみを定義する。アプリ実行
 
 # base_ui
 
-共通利用される テキストスタイル、色、画像などの基礎的・原始的な UI 部品、それらを組み合わせた共通の UI 部品などを実装する。
+- Flutter アプリ内で共通利用される テキストスタイル、色などのスタイルガイドの実装
+- 画像、ボタン、AppBar、TextField などの基礎的な UI 部品の実装
 
 ![bg](https://cdn.kosukesaigusa.com/flutter-kaigi-2024/assets/package-base-ui.svg)
 
 ---
 
-# base_ui パッケージが依存するパッケージ
+# base_ui が依存するパッケージの例
 
 - Flutter への依存: direct
-- 依存するパッケージの例：
-  - extended_image
-  - flutter_svg
-  - flutter_gen
+- 画像のベースの実装のために extended_image、静的アセットのコード生成のために flutter_gen などを利用
+
+```yaml
+dependencies:
+  extended_image:
+  flutter:
+    sdk: flutter
+  flutter_svg:
+
+dev_dependencies:
+  build_runner:
+  flutter_gen_runner:
+```
 
 ---
 
 # base_ui の実装例
 
 - Figma と同名で定義された TextStyle, Color などのスタイルガイド
+- Material のテーマ定義とは一致していない
 
 ```dart
 /// アプリで使用する色一覧。
@@ -392,8 +473,6 @@ abstract interface class AppColor {
 
   /// プライマリーの 02 の青色。
   static const Color primary02 = Color(0xFF3F9AD1);
-
-  /** 省略 */
 
   /// セカンダリーの 01 のピンク色。
   static const Color secondary01 = Color(0xFFFE8D8B);
@@ -419,9 +498,6 @@ class CommonElevatedButton extends StatelessWidget {
   const CommonElevatedButton.sWithIcon({/** 省略 */});
 
   /** 省略 */
-
-  @override
-  Widget build(BuildContext context) {/** 省略 */}
 }
 ```
 
@@ -429,19 +505,25 @@ class CommonElevatedButton extends StatelessWidget {
 
 # system
 
-3rd パーティのツールをラップして基礎的な実装を記述する。外部パッケージへの依存を閉じ込めて、外部に表出させない。
+- 3rd パーティのツールをラップして基礎的な実装を記述
+- 外部パッケージへの依存を閉じ込めて、外部に表出させない
 
 ![bg](https://cdn.kosukesaigusa.com/flutter-kaigi-2024/assets/package-system.svg)
 
 ---
 
-# system パッケージが依存するパッケージ
+# system が依存するパッケージの例
 
 - Flutter への依存: transitive
-- 依存するパッケージの例：
-  - dio
-  - firebase_analytics
-  - shared_preferences
+- 各種の 3rd パーティのツールに依存する
+
+```yaml
+dependencies:
+  dio:
+  firebase_analytics:
+  firebase_remote_config:
+  shared_preferences:
+```
 
 ---
 
@@ -471,7 +553,7 @@ class HttpClient {
 
 # system の実装例
 
-- `HTTPClient` クラスが返す `HttpResponse` クラスの例（一部省略・簡略化）
+- `HTTPClient` を通じた HTTP リクエストの結果を表現する `HttpResponse` クラスの例（一部省略・簡略化）
 - Result 型のような形で HTTP リクエストの成功・失敗を表現
 
 ```dart
@@ -494,8 +576,8 @@ sealed class HttpResponse<T> with _$HttpResponse<T> {
 
 # system の実装例
 
-- 3rd パーティーのパッケージへの依存は例外も含めて外部には表出させない
-- 不要な機能のインターフェースは塞いでシンプルにする
+- HTTP リクエストの結果として `HttpResponse` を返す
+- 3rd パーティーパッケージへの依存は例外も含めて外部には表出させない
 
 ```dart
 class HttpClient {
@@ -517,18 +599,53 @@ class HttpClient {
 
 # repository
 
-データソース（自社の API サーバーやローカルストレージなど）とのやり取りを記述する。
+- データソースとのやり取りを記述する
+- 接続先のデータソース（自社のバックエンドサーバやローカルストレージなど）の情報は表出させない
 
 ![bg](https://cdn.kosukesaigusa.com/flutter-kaigi-2024/assets/package-repository.svg)
 
 ---
 
-# repository パッケージが依存するパッケージ
+# repository が依存するパッケージ
 
 - Flutter への依存: transitive
-- 依存するパッケージの例：
-  - system
-  - riverpod
+- system パッケージに依存にして HTTP リクエストなどを行う
+- json_serializable, freezed による HTTP レスポンスのパースと Dto の定義を行う
+
+```yaml
+dependencies:
+  freezed_annotation:
+  json_annotation:
+  riverpod:
+  system:
+    path: ../system
+
+dev_dependencies:
+  build_runner:
+  freezed:
+  json_serializable:
+  riverpod_generator:
+```
+
+---
+
+# repository の実装例
+
+- Repository による通信結果を表現する `RepositoryResult` クラスの例（一部省略・簡略化）
+- Result 型のような形で成功・失敗を表現
+
+```dart
+@freezed
+sealed class RepositoryResult<T> with _$RepositoryResult<T> {
+  const factory RepositoryResult.success(T data) = SuccessRepositoryResult<T>;
+
+  const factory RepositoryResult.failure(
+    Object e, {
+    FailureRepositoryResultReason? reason,
+    ErrorDto? errorDto,
+  }) = FailureRepositoryResult;
+}
+```
 
 ---
 
@@ -541,7 +658,7 @@ class AccountDetailRepository {
   /** 省略 */
 
   Future<RepositoryResult<AccountDetailDto>> fetchAccountDetail() async {
-    final response = await _ref.read(omiaiHttpRequestHelperProvider).request(/** 省略 */);
+    final response = await _ref.read(httpClientProvider).request(/** 省略 */);
     switch (response) {
       case SuccessHttpResponse(:final data):
         final dto = AccountDetailDto.fromJson(data as Map<String, dynamic>);
@@ -558,7 +675,7 @@ class AccountDetailRepository {
 
 # repository の実装例
 
-- Dto として HTTP レスポンスのデータを定義する
+- Dto として HTTP レスポンスの型定義をする
 - 不適切なフィールド名や型を変換して、サーバサイドの負債を持ち込まない
 
 ```dart
@@ -579,18 +696,34 @@ class FooDto with _$FooDto {
 
 # domain
 
-業務知識や業務ロジックを記述する。
+- クライアントアプリの業務概念を表すエンティティの定義
+- app がユーザー体験として利用する例外型の定義
+- Repository を通じてのデータの取得や保存などを含む業務ロジックの記述
 
 ![bg](https://cdn.kosukesaigusa.com/flutter-kaigi-2024/assets/package-domain.svg)
 
 ---
 
-# domain パッケージが依存するパッケージ
+# domain が依存するパッケージ
 
 - Flutter への依存: transitive
-- 依存するパッケージの例：
-  - repository
-  - riverpod
+- repository パッケージに依存してデータにアクセスする
+- freezed で業務概念のエンティティを定義する
+- riverpod で状態管理ロジックを実装する
+
+```yaml
+dependencies:
+  freezed_annotation:
+  repository: 
+    path: ../repository
+  riverpod:
+  riverpod_annotation:
+
+dev_dependencies:
+  build_runner:
+  freezed:
+  riverpod_generator:
+```
 
 ---
 
@@ -603,11 +736,13 @@ class FooDto with _$FooDto {
 @freezed
 class Member with _$Member {
   const factory Member({
+    required int userId,
     /** 省略 */
     required LogInStatus loginStatus,
   }) = _Member;
 
   factory Member.fromDto(MemberDto dto) => Member(
+    userId: dto.userId,
     /** 省略 */
     loginStatus: LogInStatus.fromDateTime(dto.lastAccessedAt),
   );
@@ -618,8 +753,8 @@ class Member with _$Member {
 
 # domain の実装例
 
-- お相手メンバーのログインステータスの定義の例
-- 最終ログイン日時という事実から、ログインステータス（直近どのくらいアクティブか）という業務概念を計算する
+- お相手メンバーのログインステータス（直近どのくらいアクティブか）の定義の例
+- 最終ログイン日時というサーバサイド (DB) 上の事実から、ログインステータスというクライアントアプリにおける業務概念を計算する
 
 ```dart
 enum LogInStatus {
@@ -638,8 +773,7 @@ enum LogInStatus {
 
 # domain の実装例
 
-- お相手メンバーの詳細を取得するロジックの例
-- riverpod の関数で取得処理を記述する
+- riverpod の関数で取得処理のロジックを記述する
 - repository による取得結果を switch 文で分岐して処理する
 
 ```dart
@@ -659,8 +793,7 @@ Future<Member> memberDetail(MemberDetailRef ref, {required int userId}) async {
 
 # domain の実装例
 
-- アカウント詳細の状態管理（取得と更新を行うロジック）の例
-- riverpod のクラス (Notifier) で状態管理を記述する
+- riverpod のクラス (Notifier) で状態管理のロジックを記述する
 
 ```dart
 @Riverpod(keepAlive: true)
@@ -691,7 +824,7 @@ class SendLikeUseCase {
   /** 省略 */
 
   Future<void> invoke(/** 省略 */) async {
-    final result = await _ref.read(interestRepositoryProvider).sendInterest(/** 省略 */);
+    final result = await _ref.read(likeRepositoryProvider).sendLike(/** 省略 */);
     switch (result) {
         /** 省略 */
       case FailureRepositoryResult(/** 省略 */):
@@ -708,20 +841,36 @@ class InsufficientPointsToSendLikeException implements Exception {}
 
 # app
 
-Flutter アプリのエントリポイントとしての実装、また、プレゼンテーション層としてのユーザー体験を実装する。
+- Flutter アプリのエントリポイントとしての実装
+  - `dart-define` などを通じたアプリの設定値の取得・決定
+  - `ProviderScope.overrides` による依存の注入
+- UI 層としてのユーザー体験を実装
+  - ウィジェットツリーの構築、画面遷移、各画面やコンポーネントの描画、ユーザー操作とのインタラクション
 
 ![bg](https://cdn.kosukesaigusa.com/flutter-kaigi-2024/assets/package-app.svg)
 
 ---
 
-# app パッケージが依存するパッケージ
+# app が依存するパッケージ
 
 - Flutter への依存: direct
-- 依存するパッケージの例：
-  - domain
-  - base_ui
-  - auto_route
-  - hooks_riverpod
+
+```yaml
+dependencies:
+  auto_route:
+  base_ui:
+    path: ../base_ui
+  domain:
+    path: ../domain
+  flutter:
+    sdk: flutter
+  flutter_hooks:
+  hooks_riverpod:
+
+dev_dependencies:
+  auto_route_generator:
+  build_runner:
+```
 
 ---
 
@@ -778,7 +927,7 @@ CommonFilledButton.sWithIcon(
   onPressed: () async {
     try {
       await _ref.read(sendLikeUseCaseProvider).invoke(/** 省略 */);
-    } on InsufficientPointsToSendLikeException {
+    } on InsufficientPointsToSendLikeException catch (e) {
       await _showErrorDialog(/** 省略 */);
     }
     /** 省略 */
@@ -792,243 +941,51 @@ CommonFilledButton.sWithIcon(
 
 # パッケージ構成
 
-![bg](https://cdn.kosukesaigusa.com/flutter-kaigi-2024/assets/package-vertical-all.svg)
-
-- app は Flutter の世界
-- domain 以下は主には Dart の世界
-- app, domain はクライアントアプリの世界
-- repository はサーバサイドアプリとの境界
-
----
-
-# パッケージ構成
-
-![bg](https://cdn.kosukesaigusa.com/flutter-kaigi-2024/assets/package-vertical-repository-system.svg)
-
-<div class="content-left-60">
+![bg](https://cdn.kosukesaigusa.com/flutter-kaigi-2024/assets/package-repository-system.svg)
 
 ## repository - system 間
 
 - dio パッケージを通じて HTTP リクエストを行う
-- dio パッケージ由来の例外は表出させない
-- Result 型のような `HttpResponse` 型を返す
-- repository 層では `switch` 文による成功・失敗のハンドリングが強制される
-- サーバサイドの負債は repository 層で吸収し切る
-
-</div>
+- dio パッケージへの依存は例外も含めて repository に表出しない
+- Result 型のような `HttpResponse` 型をインターフェースとすることで、repository 層での `switch` による成功・失敗のハンドリングが強制、画一化される
 
 ---
 
 # パッケージ構成
 
-![bg](https://cdn.kosukesaigusa.com/flutter-kaigi-2024/assets/package-vertical-domain-repository.svg)
-
-<div class="content-left-60">
+![bg](https://cdn.kosukesaigusa.com/flutter-kaigi-2024/assets/package-domain-repository.svg)
 
 ## domain - repository 間
 
-- domain は repository のメソッドを呼び出してデータを読み書きする
-- repository のメソッドは Result 型のような `RepositoryResult` 型を返す
-- domain 層では `switch` 文による成功・失敗のハンドリングが強制される
-- domain 層では Dto から業務知識を表すエンティティを生成する
-
-</div>
+- repository のメソッドを呼び出してデータを読み書きする
+- Result 型のような `RepositoryResult` 型をインターフェースとすることで、domain 層での `switch` による成功・失敗のハンドリングが強制、画一化される
+- domain 層では Dto から業務知識を表すエンティティを生成し、サーバサイドの負債は持ち込まない
 
 ---
 
 # パッケージ構成
 
-![bg](https://cdn.kosukesaigusa.com/flutter-kaigi-2024/assets/package-vertical-app-domain.svg)
-
-<div class="content-left-60">
+![bg](https://cdn.kosukesaigusa.com/flutter-kaigi-2024/assets/package-app-domain.svg)
 
 ## app - domain 間
 
 - app はユーザー体験の実現のために domain のロジックを呼び出し、業務概念のデータを読み書きする
 - 業務知識として取り扱うべき例外を捕捉して、ユーザー体験に反映する
 
-</div>
-
----
-
-<!-- _class: lead -->
-
-<style scoped>h1 { margin-top: 80px; }</style>
-
-# なぜパッケージを分けるのか
-
-![bg](https://cdn.kosukesaigusa.com/flutter-kaigi-2024/assets/center-title-background.svg)
-
----
-
-<!-- _class: lead -->
-
-<style scoped>h1 { margin-top: 80px; }</style>
-
-# こんな課題はありませんか？🤔
-
-![bg](https://cdn.kosukesaigusa.com/flutter-kaigi-2024/assets/background-black.svg)
-
----
-
-# BAD: いろいろな境界や依存の混同
-
-- 業務ロジックの実装が、HTTP クライアントにも、UI にも依存する
-- サーバサイドアプリとクライアントアプリのプレゼンテーション層の密結合
-
-※ 極端な例：
-
-```dart
-import 'package:dio/dio.dart';
-import 'package:flutter/material.dart';
-import 'package:flutter_localizations/flutter_localizations.dart';
-
-Future<void> someLogic(BuildContext context) async {
-  try {
-    final response = await someRepositoryMethod();
-    ScaffoldMessenger.of(context).showSnackBar(SnackBar(content: Text(response.message)));
-  } on DioException catch (e) {
-    ScaffoldMessenger.of(context).showSnackBar(SnackBar(content: Text(AppLocalizations.of(context).error)));
-  }
-}
-```
-
----
-
-# BAD: 意図しないレイヤーへの依存が行われる
-
-- 例えば Presentation 層が直接 repository 層を呼び出すことが禁止されている場合
-- コード規約で縛り、PR レビューで防ぐしか方法がない
-
-```dart
-ElevatedButton(
-  onPressed: () => ref.read(someRepositoryProvider).doSomething(),
-  /** 省略 */
-);
-```
-
----
-
-# BAD: 意図しないレイヤーへの依存が行われる
-
-- 通信層が、業務知識としての認証情報に依存する
-- 通信層のユニットテストを書きたいのに、業務知識をモックする必要がある
-- 「この依存が許されるなら...」と、実装の正しさを判断する基準が曖昧になる
-
-```dart
-class SomeRepository {
-  /** 省略 */
-
-  Future<Something> fetchSomething({/** 省略 */}) async {
-    final accessToken = _ref.read(accessTokenProvider);
-    final response = await _client.request(/** 省略 */);
-    /** 省略 */
-  }
-}
-```
-
----
-
-# BAD: 意図しないレイヤーへの依存が行われる
-
-- 汎用的な実装として作られたものが、いつの間にか意図しない対象に依存するようになる
-
-```dart
-class PaginatedFetcher<T> {
-  /** 省略 */
-
-  Future<List<T>> fetchNextPage(/** 省略 */) async {
-    /** 省略 */
-    final items = await fetch(/** 省略 */);
-    /** 省略 */
-    await ref.read(analyticsProvider).logEvent(/** 省略 */);
-    return items;
-  }
-}
-```
-
----
-
-# GOOD: 依存性の注入のテクニックの例
-
-別パッケージにアクセストークン取得ロジックのインターフェースのみを定義する：
-
-```dart
-@riverpod
-Future<String?> Function() extractAccessToken(Ref ref) => throw UnimplementedError();
-```
-
-インターフェースに依存して、アクセストークンを取得し、利用する：
-
-```dart
-class SomeRepository {
-  /** 省略 */
-
-  Future<Something> fetchSomething({/** 省略 */}) async {
-    final accessToken = _ref.read(extractAccessTokenProvider);
-    final response = await _client.request(/** 省略 */);
-    /** 省略 */
-  }
-}
-```
-
----
-
-# GOOD: 依存性の注入のテクニック
-
-- アプリの実行時には `ProviderScope.overrides` で domain 層からアクセストークンを取得するロジックを注入する
-- たとえば、リフレッシュトークンのロジックなども同様に定義する
-
-```dart
-ProviderScope(
-  overrides: [
-    extractAccessTokenProvider.overrideWith(
-      (ref) => () async {
-        final auth = await ref.read(authNotifierProvider.future);
-        return auth.accessToken;
-      },
-    ),
-  ],
-)
-```
-
----
-
-# GOOD: 依存性の注入のテクニック
-
-- ユニットテスト時には `ProviderContainer.overrides` でアクセストークンの有無の状況を上書きする。
-
-```dart
-ProviderContainer createContainer({
-  /** 省略 */
-  bool setApiAccessToken = true,
-}) {
-  final container = ProviderContainer(
-    /** 省略 */
-    overrides: [
-      extractAccessTokenProvider.overrideWith(
-        (_) => () async => setApiAccessToken ? 'test-access-token' : null,
-      ),
-    ],
-  );
-  /** 省略 */
-}
-```
-
 ---
 
 # パッケージを分けることで得られる恩恵
 
-## ✅ 誤った依存や実装が静的解析のレベルで防がれる
+## &#x2705; 誤った依存や実装が静的解析のレベルで防がれる
 
 - 誤った依存や実装が仕組み上できなくなり、PR レビューの負担も少ない
 
-## ✅ 各タスクに必要な実装が明確で集中できる
+## &#x2705; 各タスクに必要な実装が明確で集中できる
 
-- 各レイヤーの責務や、許される依存が明確で、実装内容が明確である
-- 各レイヤーのユニットテストも当然のように書ける
+- 各レイヤーの責務や、許される依存が明確で、実装内容に悩まない
+- 各レイヤーのユニットテストも容易に書ける
 
-## ✅ 新たに参画したメンバーが開発しやすい
+## &#x2705; 新たに参画したメンバーが開発しやすい
 
 - 各レイヤーで実装すべき内容や例外ハンドリングの方法がパターン化されている
 - Flutter に慣れていないメンバーも、domain や repository 層の実装は Dart エンジニアとして活躍できる
@@ -1037,17 +994,107 @@ ProviderContainer createContainer({
 
 # パッケージを分けることで被る不利益？
 
-## 🤔 build_runner を各パッケージで実行するのが面倒
+## &#x1F914; build_runner を各パッケージで実行するのが面倒
 
 - 仕方なし。エイリアスやタスクランナーなどの工夫を！
 
-## 🤔 同じ機能に関する実装が Explorer 上で遠く見える
+## &#x1F914; 同じ機能に関する実装が Explorer 上で遠く見える
 
-- ファイル検索の仕方を工夫すると Explorer 上でファイルを探すことがほとんどなくなる
+- ファイル検索の仕方を工夫すると Explorer 上でファイルを探すことがなくなる
 
-## 🤔 冗長なコードが増える可能性がある
+## &#x1F914; 冗長なコードが増える可能性がある
 
 - サーバサイドの概念、命名、テーブル定義、HTTP インターフェース、クライアントアプリで取り扱う概念に差がない場合など
+
+## &#x1F914; 難しそう・うまく運用できるか不安
+
+- 単一パッケージの構成に戻すのは簡単！
+
+---
+
+<!-- _class: lead -->
+
+<style scoped>h1 { margin-top: 80px; }</style>
+
+# ここまでのまとめ
+
+![bg](https://cdn.kosukesaigusa.com/flutter-kaigi-2024/assets/background-black.svg)
+
+---
+
+# ここまでのまとめ
+
+パッケージを分けることで...
+
+- &#x2705; 依存に関する誤った実装を仕組み上防ぐことができる
+- &#x2705; 各レイヤーの責務が明確になり、ユニットテストも容易に書ける
+- &#x2705; Result 相当のインターフェース定義と合わせて、レイヤーを跨ぐ例外ハンドリングがパターン化される
+- &#x2705; 「いま自分は Flutter エンジニアなのか、Dart エンジニアなのか」の意識を明確にして開発できる
+- &#x2705; クライアントアプリとサーバサイドアプリとの境界が明確になり、サーバサイドの負債をクライアントアプリに持ち込まなくなる
+
+---
+
+<!-- _class: lead -->
+
+<style scoped>h1 { margin-top: 80px; }</style>
+
+# リプレイスの成功のための更なる試み
+
+![bg](https://cdn.kosukesaigusa.com/flutter-kaigi-2024/assets/center-title-background.svg)
+
+---
+
+# リプレイスの成功のための更なる試み
+
+## &#x2705; ユニットテスト
+
+- domain および、それより抽象的なレイヤーでテストカバレッジ 100%
+- CI で継続的にカバレッジを計測
+
+## &#x2705; ドキュメンテーション
+
+- public_member_api_docs を全面的に有効化して doc comment を 100% 記述
+
+## &#x2705; 実装の可能な限りのパターン化
+
+- マッチングアプリはそんなに難しくない！
+- 生成 AI を活用する試み
+
+---
+
+<!-- _class: lead -->
+
+<style scoped>h1 { margin-top: 80px; }</style>
+
+# ユニットテスト
+
+![bg](https://cdn.kosukesaigusa.com/flutter-kaigi-2024/assets/center-title-background.svg)
+
+---
+
+# ユニットテストの対象
+
+<img src="https://cdn.kosukesaigusa.com/flutter-kaigi-2024/assets/test-scope.png" style="display: block; margin: auto;" alt="test-scope" width="75%"/>
+
+<div style="font-size: 14px; color: #666; text-align: center; margin-top: 16px;">
+出典：<a href="https://logmi.jp/technology/329184" style="color: #666;">「自動テストの種類の曖昧さが少ない「テストサイズ」という分類」（ログミーTech）</a>
+</div>
+
+---
+
+# ユニットテスト
+
+- matrix を組んで各パッケージのユニットテストを CI で継続的に実行する
+
+![bg](https://cdn.kosukesaigusa.com/flutter-kaigi-2024/assets/ci-test.svg)
+
+---
+
+# ユニットテスト
+
+- 業務ロジック層およびそれより抽象的な層でのユニットテストのカバレッジが 100% であることを PR 上で確認する
+
+![bg](https://cdn.kosukesaigusa.com/flutter-kaigi-2024/assets/ci-coverage-report.svg)
 
 ---
 
@@ -1061,16 +1108,15 @@ ProviderContainer createContainer({
 
 ---
 
-# doc comment を 100% 記述
+# public_member_api_docs
 
-- public_member_api_docs を全面的に有効化
-- Effective Dart に従って正しい記法・表現を徹底
-- 「パッケージを作るようにアプリケーションを作る」意識を重視
-- ソースコードが「実行可能な仕様書」としての理想に近づく
+<!-- ![bg cover](https://cdn.kosukesaigusa.com/flutter-kaigi-2024/assets/public-member-api-docs.png) -->
+
+<img src="https://cdn.kosukesaigusa.com/flutter-kaigi-2024/assets/public-member-api-docs.png" alt="public_member_api_docs" width="100%"/>
 
 ---
 
-# doc comment を 100% 記述
+# ドキュメンテーションコメント
 
 ```dart
 /// firebase_analytics パッケージが提供する、Firebase Analytics の各機能をラップしたクラス。
@@ -1103,73 +1149,38 @@ class FirebaseAnalyticsClient {
 
 ---
 
-# ユニットテスト
+# doc comment を 100% 記述
 
-matrix を組んで各パッケージのユニットテストを CI で継続的に実行する
-
-![bg](https://cdn.kosukesaigusa.com/flutter-kaigi-2024/assets/ci-test.svg)
-
----
-
-# ユニットテスト
-
-業務ロジック層およびそれより抽象的な層でのユニットテストのカバレッジが 100% であることを CI で維持し続ける
-
-![bg](https://cdn.kosukesaigusa.com/flutter-kaigi-2024/assets/ci-coverage-report.svg)
+- public_member_api_docs の lint ルールを全面的に有効化
+- パッケージ分割と合わせて、「パッケージを作るようにアプリケーションを作る」意識を重視
+- ソースコードが「実行可能な仕様書」としての理想に近づく
 
 ---
 
-<!-- _class: lead -->
+# 実装の可能な限りのパターン化
 
-<style scoped>h1 { margin-top: 80px; }</style>
+- repository
+  - Dto の定義と Repository クラスの実装
+- domain
+  - エンティティの定義と fromDto の factory コンストラクタ
+  - 関数の riverpod の実装
+  - class の riverpod の実装
+  - UseCase の実装
+- ... など
 
-# 実装のパターン化とスニペットの充実
-
-![bg](https://cdn.kosukesaigusa.com/flutter-kaigi-2024/assets/center-title-background.svg)
-
----
-
-# 実装のパターン化とスニペットの充実
-
-- 実装の大部分をパターン化してスニペットに：
-  - Dto 定義とそのテスト
-  - Repository クラスの実装とそのテスト
-  - 業務概念のエンティティ定義とそのテスト
-  - 関数 および class Riverpod の実装とそのテスト
-  - UseCase の実装とそのテスト
-  - ...など
-- doc comment もユニットテストも含めてスニペット化
-- スニペットの整備と生成 AI の活用は相性が非常に良い
+## → ユニットテスト、doc comment も含めてすべてスニペット化！
 
 ---
 
-# 実装のパターン化とスニペットの充実
+# 例：Repository の実装
 
-```code-snippets
-"import 'package:repository/repository.dart';",
-"import 'package:riverpod_annotation/riverpod_annotation.dart';",
-"import 'package:util/util.dart';",
-"",
-"import '../../../util/omiai_api/internal/omiai_api_handler.dart';",
-"",
-"part '${TM_FILENAME_BASE}.g.dart';",
-"",
-"/// ...を取得する。",
-"///",
-"/// 取得に失敗した場合は、...。",
-"@riverpod",
-"Future<Foo> foo(FooRef ref) async {",
-"  final result = await ref.watch(omiaiApiHandlerProvider).request(() async => ref.read(fooRepositoryProvider).fetchFoo());",
-"  switch (result) {",
-"    case SuccessRepositoryResult(:final data):",
-"      return Foo.fromDto(data);",
-"    case FailureRepositoryResult(:final e, :final errorDto):",
-"      throw SomeException();",
-"  }",
-"}",
-"",
-"class SomeException implements Exception {}",
-```
+<video src="assets/snippet-repository.mp4" muted autoplay loop width="100%"></video>
+
+---
+
+# 例：Repository のテスト
+
+<video src="assets/snippet-repository-test.mp4" muted autoplay loop width="100%"></video>
 
 ---
 
@@ -1177,6 +1188,40 @@ matrix を組んで各パッケージのユニットテストを CI で継続的
 
 <style scoped>h1 { margin-top: 80px; }</style>
 
-# Add-to-App の活用
+# 実装の可能な限りのパターン化
 
 ![bg](https://cdn.kosukesaigusa.com/flutter-kaigi-2024/assets/center-title-background.svg)
+
+---
+
+# 実装の可能な限りのパターン化
+
+- 合計約 20 個のスニペットを `.code-snippets` として共有
+- ファイル名などの一部を正規表現で抽出して、一部動的な内容も生成できる
+- 各レイヤーの典型的な実装すべてをパターン化してスニペット化
+  - スニペットで対応できない実装があれば、不確実性の高い対象として認識できる
+- ユニットテストの記述対象は、テストコードもパターン化してスニペット化
+
+---
+
+# 試み：生成 AI の活用
+
+<video src="assets/ai-repository-test.mp4" muted autoplay loop width="100%"></video>
+
+---
+
+<!-- _class: lead -->
+
+<style scoped>h1 { margin-top: 80px; }</style>
+
+# まとめ
+
+![bg](https://cdn.kosukesaigusa.com/flutter-kaigi-2024/assets/center-title-background.svg)
+
+---
+
+# まとめ
+
+- &#x2705; パッケージ分割による堅牢な設計
+- &#x2705; テストカバレッジの継続的な計測とドキュメンテーションによる品質担保
+- &#x2705; スニペットと生成 AI の活用による開発効率化

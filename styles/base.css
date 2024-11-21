@@ -4,7 +4,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500&display=swap');
 
 * {
-  font-family: 'Noto Sans JP', sans-serif;
+  font-family: 'Noto Sans JP', 'Segoe UI Emoji', 'Segoe UI Symbol',
+    'Apple Color Emoji', sans-serif;
 }
 
 section {
@@ -28,6 +29,11 @@ h2 {
   font-size: 28px;
 }
 
+.note {
+  font-size: 24px;
+  color: #666;
+}
+
 /* code block style */
 section pre {
   border-radius: 8px;
@@ -42,7 +48,7 @@ section code {
 
 code[class*='language-'],
 code[class*='language-'] span {
-  font-family: 'Fira Code', monospace !important;
+  font-family: 'Fira Code', monospace;
 }
 
 section ul,

@@ -1,6 +1,7 @@
 /* @theme base */
 @import 'gaia';
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500&display=swap');
 
 * {
   font-family: 'Noto Sans JP', sans-serif;
@@ -37,6 +38,11 @@ section code {
   padding: 4px 8px 4px;
   border-radius: 4px;
   font-size: 0.8rem;
+}
+
+code[class*='language-'],
+code[class*='language-'] span {
+  font-family: 'Fira Code', monospace !important;
 }
 
 section ul,

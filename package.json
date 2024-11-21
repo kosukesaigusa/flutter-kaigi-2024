@@ -2,8 +2,10 @@
   "name": "flutter_ninjas_2024",
   "version": "1.0.0",
   "description": "",
+  "type": "module",
   "scripts": {
     "dev": "PORT=8000 npx @marp-team/marp-cli -s . --theme-set ./styles/*.css --html",
+    "dev:engine": "PORT=8000 npx @marp-team/marp-cli -s . --theme-set ./styles/*.css --html --engine ./engine.js",
     "preview": "PORT=8000 npx @marp-team/marp-cli -p . --theme-set ./styles/*.css --html",
     "export:pptx": "npx @marp-team/marp-cli --pptx slide.md --theme-set ./styles/*.css --html",
     "export:pdf": "npx @marp-team/marp-cli --pdf slide.md --theme-set ./styles/*.css --html"
@@ -12,6 +14,11 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "@marp-team/marp-cli": "^3.4.0"
+    "@marp-team/marp-cli": "^3.4.0",
+    "@shikijs/markdown-it": "^1.23.1"
+  },
+  "dependencies": {
+    "@marp-team/marp-core": "^3.2.0",
+    "markdown-it-shiki": "^0.9.0"
   }
 }

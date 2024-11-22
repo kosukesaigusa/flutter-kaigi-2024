@@ -1229,19 +1229,19 @@ class FirebaseAnalyticsClient {
 
 # 例：Repository の実装
 
-<video src="assets/snippet-repository.mp4" muted autoplay loop width="100%"></video>
+<video src="https://cdn.kosukesaigusa.com/flutter-kaigi-2024/assets/snippet-repository.mp4" muted autoplay loop width="100%"></video>
 
 ---
 
 # 例：Repository のテスト
 
-<video src="assets/snippet-repository-test.mp4" muted autoplay loop width="100%"></video>
+<video src="https://cdn.kosukesaigusa.com/flutter-kaigi-2024/assets/snippet-repository-test.mp4" muted autoplay loop width="100%"></video>
 
 ---
 
 # 試み：生成 AI の活用
 
-<video src="assets/ai-repository-test.mp4" muted autoplay loop width="100%"></video>
+<video src="https://cdn.kosukesaigusa.com/flutter-kaigi-2024/assets/ai-repository-test.mp4" muted autoplay loop width="100%"></video>
 
 ---
 
